@@ -1,0 +1,19 @@
+<h1>TODO</h1>
+
+<a href="/create/">
+    <button>Create</button>
+</a>
+{% for todo in todos %}
+
+   
+   <li>
+    <a href="">{{ todo.title }} </a>
+    <a href="/update/{{ todo.pk }}">
+    <button>Update</button>
+
+   </a>
+   <a href="/delete/{{ todo.pk }}/">
+    <button>Delete</button>
+   </a></li>
+   
+{% endfor %}
