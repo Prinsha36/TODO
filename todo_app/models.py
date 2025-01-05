@@ -6,3 +6,5 @@ class Todo(models.Model): #PascalCase
 
     def __str__(self):
         return self.title
+    
+    
